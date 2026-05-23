@@ -1,0 +1,686 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    transition: 1.3s ease;
+}
+
+.main-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#greetings{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 800;
+}
+
+#time{
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    background: linear-gradient(270deg, rgba(242, 212, 17, 255) 0%,rgba(72, 72, 68, 1) 67%)
+}
+
+.dine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 730px;
+}
+
+.dine h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+}
+
+.dark-mode{
+    color: #fff;
+    background-color: #f4b817;
+}
+
+#dark-mode-image{
+    width: 40px;
+    cursor: pointer;
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.first-section h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+}
+
+.first-section p{
+    margin: 30px 0 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.first-section a{
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    border: 2px solid #f6c423;
+    color: #fff;
+    padding: 7px;
+}
+
+.image-1 img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.background-color-wrap{
+    color: #fff;
+    background: linear-gradient(90deg, rgba(15, 15, 15, 1) 0%,rgba(55, 55, 52, 255) 87%,rgba(72, 72, 68, 1) 100%)
+}
+
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 244px;
+    margin-bottom: 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+#btn-1{
+    cursor: pointer;
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(242, 212, 17, 255) 0%,rgba(194, 173, 31, 255) 0%,rgba(175, 157, 36, 255) 0%,rgba(144, 131, 46, 255) 22%,rgba(72, 72, 68, 1) 71%)
+}
+
+.second-section img{
+    width: 290px;
+    height: 400px;
+    object-fit: cover;
+    z-index: 9;
+    margin-top: -30px;
+    border-radius: 18px;
+    box-shadow:#1a1a19 5px 5px 20px;
+}
+
+.second-section h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    background-image: linear-gradient(80deg, #1C1C1B,#E6CA14, #615D3D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.second-section p{
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 20px;
+}
+
+.third-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 230px;
+    margin-bottom: 50px;
+}
+
+.hidden-2{
+    display: none;
+}
+
+#btn-2{
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgba(242, 212, 17, 255) 0%,rgba(194, 173, 31, 255) 0%,rgba(175, 157, 36, 255) 0%,rgba(144, 131, 46, 255) 22%,rgba(72, 72, 68, 1) 71%)
+}
+
+.third-section h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;   
+    background-image: linear-gradient(80deg, #1C1C1B,#E6CA14, #615D3D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.third-section p{
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 20px;
+}
+
+.third-section img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow:#1a1a19 5px 5px 20px;
+    margin: 35px 0 30px;
+}
+
+.fourth-container{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.fourth-container h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+}
+
+.fourth-container p{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.highlight p{
+    margin-top: 20px;
+}
+
+.details-and-summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 130px;
+}
+
+summary{
+    list-style-type: none;
+    font-family: "Oswald", sans-serif;
+}
+
+summary::after{
+    content: 'v';
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+}
+
+details[open] summary::after{
+    content: '^';
+}
+
+details{
+    border:  2px solid #DEC416;
+    padding: 10px;
+}
+
+details p{
+    line-height: 1.9;
+}
+
+details:hover{
+    color: #fff;
+    background: linear-gradient(90deg, rgba(242, 212, 17, 255) 0%,rgba(194, 173, 31, 255) 0%,rgba(63, 63, 63, 255) 0%,rgba(80, 80, 66, 255) 0%,rgba(143, 141, 46, 1) 33%,rgba(72, 72, 68, 1) 100%,rgba(83, 83, 65, 255) 100%,rgba(84, 84, 65, 255) 7%,rgba(80, 80, 66, 255) 100%)
+}
+
+.fiveth-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-bottom: 50px;
+}
+
+.fiveth-container img{
+    width: 350px;
+    border-radius: 15px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.fiveth-container img:hover{
+    /* box-shadow:#1a1a19 10px 10px 15px; */
+    transform: scale(1.1);
+    box-shadow: 0px 8px 24px rgba(4, 4, 4, 4);
+    transition: 2s;
+}
+
+.fiveth-container h1{
+    font-family: "Oswald", sans-serif;
+}
+
+.fiveth-container p{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.specails{
+    margin-top: 60px;
+}
+
+.sixeth-container{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1fr,1);
+}
+
+.sixeth-container::after{
+    content: '';
+    position: absolute;
+    background-color: #1f1c1c;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 200px;
+}
+
+.image-7 img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+}
+
+.reservation{
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 450px;
+    color: #fff;
+    padding: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.reservation h3{
+    font-family: "Oswald", sans-serif;
+}
+
+.reservation a{
+    color: #fff;
+    text-decoration: none;
+    border: 2px #fff solid;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;    
+}
+
+.seventh-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top:-5px;
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(15, 15, 15, 1) 0%,rgba(55, 55, 52, 255) 87%,rgba(72, 72, 68, 1) 100%)
+}
+
+.seventh-container h1{
+    font-family: "Oswald", sans-serif;
+}
+
+.seventh-container p{
+    font-family: "Ubuntu", sans-serif;    
+}
+
+.footer{
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    padding: 20px;    
+}
+
+/* responsive websites */
+
+@media screen and (max-width: 890px) {
+    #time{
+        background-color: #0c0c0c;
+    }
+
+    .dine{
+        display: flex;
+        /* flex-direction: column; */
+        gap: 400px;
+    }
+
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-section h2{
+        font-size: 1.9em;
+    }
+
+    .first-section p{
+        font-size: 1.3em;
+    }
+
+    .background-color-wrap{
+        height: 1070px;
+    }
+
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .second-section img{
+        width: 500px;
+        height: 600px;
+        /* display: none; */
+    }
+
+    .second-section h1{
+        font-size: 3em;
+    }
+    
+    .second-section p{
+        font-size: 1.8em;
+    }
+    
+    #btn-1{
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    .third-section{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    
+    .third-section h1{
+        font-size: 3em;
+    }
+
+    .third-section p{
+        font-size: 1.8em;
+    }
+
+    #btn-2{
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    .third-section img{
+        width: 500px;
+        height: 600px;
+        /* display: none; */
+    }
+
+    .highlight h1{
+        font-size: 2.6em;
+    }
+
+    .highlight p{
+        font-size: 1.4em;
+    }
+
+    .details-and-summary{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    details{
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
+    .fiveth-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fiveth-container img{
+        width: 500px;
+        /* display: none; */
+    }
+    
+    .fiveth-container img:hover{
+        transform: none; 
+    }
+
+    .fiveth-container h1{
+        font-size: 2.9em;
+    }
+
+    .fiveth-container p{
+        font-size: 1.4em;
+    }
+
+    .sixeth-container::after{
+        height: 300px;
+    }
+
+    .image-7 img{
+        height: 300px;
+    }
+
+    .reservation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        /* left: 120px; */
+        
+    }
+
+    .reservation h3{
+        font-size: 2em;
+    }
+
+    .reservation a{
+        font-size: 1.4em;
+    }
+
+    .seventh-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:590px) {
+   
+    /* body{
+        background-color: #d91d1d;
+    } */
+   
+    .dine{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    
+    .first-section{
+        margin-left: 35px;
+    }
+
+    .second-section img{
+        width: 400px;
+    }
+    
+    .second-section h1{
+        font-size: 2.3em;
+    }
+    
+    .second-section p{
+        font-size: 1.5em;
+    }
+    
+    .third-section{
+        margin-left: -10px;
+    }
+
+    .third-section h1{
+        font-size: 2.3em;
+    }
+
+    .third-section p{
+        font-size: 1.5em;
+    }
+    
+    .third-section img{
+        width: 400px;
+    }
+    
+    .fourth-container{
+        margin-left: 35px;
+    }
+    
+    .fiveth-container img{
+        width: 420px;
+        height: 500px;
+        object-fit: cover;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+    }
+    
+    .fiveth-container img:hover{
+        transform: none;
+    }
+
+    .family{
+        margin-left: 20px;
+    }
+}
+
+@media screen and ( max-width:440px){
+    
+    .first-section{
+        margin-left: 30px;
+    }
+    
+    .image-1 img{
+        width: 300px;
+        height: 300px;
+    } 
+
+    .second-section{
+        margin-left: 30px;
+    }
+
+    .second-section img{
+        width: 300px;
+        height: 400px;
+    }
+
+    .second-section h1{
+        font-size: 2em;
+    }
+    
+    .second-section p{
+        font-size: 1.5em;
+    }
+    
+    .third-section{
+        margin-left: 25px;
+    }
+    
+    .third-section h1{
+        font-size: 2em;
+    }
+    
+    .third-section p{
+        font-size: 1.5em;
+    }
+
+    .third-section img{
+        width: 300px;
+        height: 400px;
+    }
+
+    .fiveth-container img{
+        width: 300px;
+    }
+
+    .reservation{
+        /* width: 300px; */
+        white-space: nowrap;
+    }
+    
+    .reservation h3{
+        font-size: 1.5em;
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+   
+    .first-section img{
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+    }
+
+    .second-section img{
+        margin-left: -30px;
+        width: 280px;
+    }
+
+    .third-section img{
+        margin-left: -30px;
+        width: 280px;
+    }
+
+    .fourth-container{
+        margin-left: -2px;
+    }
+    
+    .fourth-container h1{
+        font-size: 1.9em;
+    }
+
+    .fourth-container p{
+        font-size: 1.1em;
+    }
+
+    .details-and-summary{
+        padding: 20px;
+    }
+
+    .details-and-summary p{
+        font-size: 0.7em;
+    }
+}
