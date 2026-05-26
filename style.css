@@ -9,6 +9,26 @@
     box-sizing: border-box;
 }
 
+:root{
+    --dark-mode-color:#fff;
+    --dark-mode-background-color:#f4b817;
+    --first-section-a-border-color:#f6c423;
+    --first-section-a-color:#fff;
+    --background-color-wrap-color:#fff;
+    --btn-1-color:#fff;
+    --second-section-img-box-shadow-color:#1a1a19;
+    --btn-2-color:#fff;
+    --third-section-img-box-shadow-color:#1a1a19;
+    --details-color:#DEC416;
+    --details-hover-color:#fff;
+    --siexth-container-after-background-color:#1f1c1c;
+    --reservation-color:#fff;
+    --resevation-a-color:#fff;
+    --reservation-a-border-color:#fff;
+    --seventh-container-color:#fff;
+}
+
+
 body{
     transition: 1.3s ease;
 }
@@ -49,8 +69,8 @@ body{
 }
 
 .dark-mode{
-    color: #fff;
-    background-color: #f4b817;
+    color: var(--dark-mode-color);
+    background-color: var(--dark-mode-background-color);
 }
 
 #dark-mode-image{
@@ -80,8 +100,8 @@ body{
 .first-section a{
     font-family: "Ubuntu", sans-serif;
     text-decoration: none;
-    border: 2px solid #f6c423;
-    color: #fff;
+    border: 2px solid var(--first-section-a-border-color);
+    color: var(--first-section-a-color);
     padding: 7px;
 }
 
@@ -92,7 +112,7 @@ body{
 }
 
 .background-color-wrap{
-    color: #fff;
+    color:var(--background-color-wrap-color);
     background: linear-gradient(90deg, rgba(15, 15, 15, 1) 0%,rgba(55, 55, 52, 255) 87%,rgba(72, 72, 68, 1) 100%)
 }
 
@@ -113,7 +133,7 @@ body{
     border: none;
     padding: 4px;
     border-radius: 3px;
-    color: #fff;
+    color:var(--btn-1-color);
     background: linear-gradient(90deg, rgba(242, 212, 17, 255) 0%,rgba(194, 173, 31, 255) 0%,rgba(175, 157, 36, 255) 0%,rgba(144, 131, 46, 255) 22%,rgba(72, 72, 68, 1) 71%)
 }
 
@@ -124,7 +144,7 @@ body{
     z-index: 9;
     margin-top: -30px;
     border-radius: 18px;
-    box-shadow:#1a1a19 5px 5px 20px;
+    box-shadow:5px 5px 20px var(--second-section-img-box-shadow-color);
 }
 
 .second-section h1{
@@ -155,7 +175,7 @@ body{
 
 #btn-2{
     cursor: pointer;
-    color: #fff;
+    color:var(--btn-2-color);
     border: none;
     padding: 4px;
     border-radius: 3px;
@@ -181,7 +201,7 @@ body{
     height: 400px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow:#1a1a19 5px 5px 20px;
+    box-shadow: 5px 5px 20px var(--third-section-img-box-shadow-color);
     margin: 35px 0 30px;
 }
 
@@ -229,7 +249,7 @@ details[open] summary::after{
 }
 
 details{
-    border:  2px solid #DEC416;
+    border:  2px solid  var(--details-color);
     padding: 10px;
 }
 
@@ -238,7 +258,7 @@ details p{
 }
 
 details:hover{
-    color: #fff;
+    color: var(--details-hover-color);
     background: linear-gradient(90deg, rgba(242, 212, 17, 255) 0%,rgba(194, 173, 31, 255) 0%,rgba(63, 63, 63, 255) 0%,rgba(80, 80, 66, 255) 0%,rgba(143, 141, 46, 1) 33%,rgba(72, 72, 68, 1) 100%,rgba(83, 83, 65, 255) 100%,rgba(84, 84, 65, 255) 7%,rgba(80, 80, 66, 255) 100%)
 }
 
@@ -258,7 +278,6 @@ details:hover{
 }
 
 .fiveth-container img:hover{
-    /* box-shadow:#1a1a19 10px 10px 15px; */
     transform: scale(1.1);
     box-shadow: 0px 8px 24px rgba(4, 4, 4, 4);
     transition: 2s;
@@ -279,14 +298,12 @@ details:hover{
 .sixeth-container{
     position: relative;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1fr,1);
 }
 
 .sixeth-container::after{
     content: '';
     position: absolute;
-    background-color: #1f1c1c;
+    background-color:var(--siexth-container-after-background-color);
     top: 0;
     left: 0;
     opacity: 0.7;
@@ -307,7 +324,7 @@ details:hover{
     justify-content: center;
     align-items: center;
     gap: 450px;
-    color: #fff;
+    color: var(--reservation-color);
     padding: 10%;
     top: 0;
     left: 0;
@@ -320,9 +337,9 @@ details:hover{
 }
 
 .reservation a{
-    color: #fff;
+    color:var(--resevation-a-color);
     text-decoration: none;
-    border: 2px #fff solid;
+    border: 2px var(--reservation-a-border-color) solid;
     padding: 10px;
     font-family: "Ubuntu", sans-serif;    
 }
@@ -334,7 +351,7 @@ details:hover{
     gap: 150px;
     margin-top:-5px;
     padding: 20px;
-    color: #fff;
+    color: var(--seventh-container-color);
     background: linear-gradient(90deg, rgba(15, 15, 15, 1) 0%,rgba(55, 55, 52, 255) 87%,rgba(72, 72, 68, 1) 100%)
 }
 
@@ -355,9 +372,6 @@ details:hover{
 /* responsive websites */
 
 @media screen and (max-width: 890px) {
-    #time{
-        background-color: #0c0c0c;
-    }
 
     .dine{
         display: flex;
