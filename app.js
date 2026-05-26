@@ -8,7 +8,7 @@ const hiddenText2 = document.getElementById("hidden-text-2");
 const btn2 = document.getElementById("btn-2");
 const dots2 = document.getElementById("dots-2");
 const copyRight = document.getElementById("copyright");
-let askAQuestion = window.prompt(" PLEASE INPUT YOUR NAME BEFORE YOU ENTER ");
+let askAQuestion = window.prompt(" PLEASE IsiteNPUT YOUR NAME BEFORE YOU ENTER ");
 
 darkModeImage.addEventListener("click", () => {
 
